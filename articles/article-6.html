@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Work vs. Office — Finding the Hybrid Balance</title>
+
+  <!-- Bootstrap and icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Main site styles -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <!--INLINE CSS FOR THE TABLE-->
+
+
+  
+
+  <style>
+    /* TOC and spacing adjustments */
+    .toc-wrap{position:fixed;right:2rem;top:120px;width:260px;max-height:70vh;overflow:auto}
+    @media(max-width:991px){.toc-wrap{position:static;width:100%;max-height:none;margin-bottom:1rem}}
+    .toc-card{background:#fff;border-radius:10px;box-shadow:0 8px 22px rgba(10,10,30,0.06);padding:.9rem}
+    .toc-card h6{font-size:.92rem;margin:0 0 .5rem 0}
+    .toc-card a{display:block;color:#475569;padding:.18rem 0;text-decoration:none}
+    .toc-card a.active{color:var(--accent);font-weight:600}
+    .article-content h2{scroll-margin-top:110px}
+
+
+    table{
+          width: 100%;
+          border-collapse: collapse;
+    }
+    th,td{
+          border: 1px solid #000;
+          padding: 8px;
+          vertical-align: top;
+    }
+    th{
+      text-align: left;
+    }
+    td{
+      text-align: left;
+    }
+    th:first-child {
+            width: 15%;
+    }
+    th, td:first-child {
+          font-weight: bold;
+    }
+
+
+  </style>
+
+  <!-- Shared article stylesheet -->
+  <link rel="stylesheet" href="../assets/css/articles.css">
+</head>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Jaysen</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html" class="active">Home<br></a></li>
+          <li><a href="../about_me.html">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="../portfolio-details.html">Blog Articles</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Article section -->
+
+  <main class="article-container page-grid container mt-4">
+    <div class="row">
+      <div class="col-lg-8">
+        <article class="article-content article_text_body">
+          <header class="article-hero">
+            <div class="eyebrow kicker"></div>
+            <h1>Hybrid Project Management in Product Development: Agile Meets Waterfall</h1>
+            <div class="meta">By Jaysen Sordum Barikpoa | Published on October 25, 2025 | 8 min read</div>
+            <figure>
+              <img src="https://images.unsplash.com/photo-1649478680984-01586ce84ac0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1334" alt="Project Management Board">
+            </figure>
+          </header>
+
+          <h2>
+            Introduction
+          </h2>
+
+          <p>Imagine a product team racing to deliver a new smart device. The developers want flexible sprints to adapt to user feedback, but the hardware engineers need a fixed design plan and strict checkpoints. This tension—Agile vs Waterfall—is common in both software and manufacturing. As one expert notes, leaders have long felt forced to “choose one or the other.” In reality, many organizations are blending the two: using hybrid project management to combine Agile’s speed with Waterfall’s structure. This article explores how hybrid approaches bridge those worlds, with examples from software and manufacturing, practical frameworks and tools, and an Agile vs. Traditional vs. Hybrid comparison.</p>
+
+          <h2>Understanding Agile and Waterfall</h2>
+          <h3>Agile vs. Waterfall: A Quick Primer</h3>
+          <p>Waterfall (Traditional) project management follows a linear sequence: fully define requirements, then design, implement, test, and deliver in distinct phases. Once a phase is complete, it’s hard and costly to backtrack. Teams using Waterfall rely on detailed upfront planning and extensive documentation, with progress often shown on a Gantt chart (figure below). This works well for predictable, regulated projects, but it can leave teams “flat-footed” if requirements change.</p>
+          <p>Agile project management flips that model. Work is divided into short sprints or iterations, with regular feedback and review cycles. Requirements can evolve based on stakeholder input. This iterative approach makes teams more adaptable—frequent releases and demos keep everyone aligned with customer needs. However, Agile alone can struggle with dependencies and long-term planning, and it often requires cultural shifts to succeed.</p>
+          <p>Early on, many viewed Agile and Waterfall as opposing choices: rigid vs. flexible. But today it’s clear that neither is always “better” – and that framing their relationship as a war hinders innovation. Instead, teams are finding ways to blend these frameworks. Hybrid project management deliberately combines elements of Agile and Waterfall (or other methods like Lean or Kanban) to fit the project’s context.</p>
+        
+          <h2>Defining Hybrid Project Management</h2>
+          <h3>What Is Hybrid Project Management?</h3>
+          <p>A hybrid project management approach means using both predictive and adaptive processes in one project. In practice, teams might use traditional planning and governance for certain phases (e.g. requirements or regulatory sign-offs), and Agile methods (sprints, daily stand-ups) for development work. One simple definition: hybrid project management is “a combination of two different methodologies or systems, such as Waterfall and Agile, to create a new and better project management model.” In other words, hybrid projects pick the right tool for each job.</p>
+          <p>For example, some organizations use a stage-gate plan (a Waterfall-style review at key milestones) while doing software development in Scrum sprints between gates. Others use Scrumban, a hybrid framework that “combines the best features of Scrum and Kanban” – it uses Scrum’s sprint structure plus Kanban’s visual boards and work-in-progress limits. At the enterprise level, the Project Management Institute’s Disciplined Agile (DA) toolkit explicitly supports hybrid choices: it “pairs freedom to choose from the best of agile, lean, and traditional sources with guidance to make better choices,” helping teams “guide you to the best way of working” for your situation.</p>
+          <p>In short, hybrid methods let teams “choose their way of working” based on each project’s needs. This flexibility can dissolve the old “Agile vs Waterfall” battle. As one expert puts it, hybrid frameworks accept the fluidity of real projects and allow a more nimble approach—“the more ways you have to approach a problem, the better chance you have of resolving it.”</p>
+        
+          <h2>Advantages of Hybrid Project Management</h2>
+          <h3>Benefits of a Hybrid Approach</h3>
+          <p>By carefully combining Agile and traditional practices, teams can capture the strengths of each. In manufacturing especially, experts highlight that hybrid approaches speed up development without sacrificing quality. Key benefits include:</p>
+          <ul>
+            <li>
+              <strong>Faster Time-to-Market: </strong>
+              Iterative development with early customer feedback lets teams validate ideas quickly and avoid late-stage redesigns. Hybrid teams often deliver working prototypes or increments sooner, accelerating overall delivery.
+            </li>
+
+            <li>
+              <strong>Improved Quality: </strong>
+              Blending methods fosters collaboration across functions. For example, ongoing cross-team reviews (an Agile habit) together with structured design reviews (a Waterfall habit) can catch issues early, leading to a higher-quality final product.
+            </li>
+
+            <li>
+              <strong>Greater Flexibility: </strong>
+              Unlike rigid Waterfall plans, hybrid workflows can accommodate change. They maintain overall structure but allow mid-course corrections. This is invaluable when market needs or customer requirements shift unexpectedly.
+            </li>
+
+            <li>
+              <strong>Cost Efficiency: </strong>
+              By eliminating excess rework and waste, hybrid methods can lower costs. Teams focus effort where it adds value – documentation and planning are done as needed (not for its own sake) – which cuts inefficiency.
+            </li>
+          </ul>
+          <p>These advantages are not just theory. For instance, a large machinery manufacturer facing new competition adopted a hybrid product development process: it used Agile sprints for core functionality and Waterfall processes to finalize design and manufacturing plans. As a result, the new product line reached market in record time and kept the company’s competitive edge.</p>
+
+          <h3>Potential Challenges and Pitfalls</h3>
+          <p>While hybrid approaches offer significant advantages, they also present unique challenges that can undermine success if not addressed. Most issues stem from implementation and human factors rather than the methodologies themselves.</p>
+          <p>Key pitfalls include:</p>
+          <ul>
+            <li>
+              <strong>Implementation Difficulties and Knowledge Gaps:</strong>
+              Successfully blending Agile and Waterfall requires managers and teams to have strong expertise in both methodologies. Without this, the hybrid model can become a barrier, leading to poor integration and suboptimal results.
+            </li>
+
+            <li>
+              <strong>Team Confusion and Misalignment: </strong>
+              The mix of approaches can confuse team members, especially those less experienced with one method, resulting in inconsistencies, inefficiencies, and potential errors in execution.
+            </li>
+
+            <li>
+              <strong>Balancing Structure and Flexibility:</strong>
+              Achieving the right equilibrium between Waterfall's rigid structure and Agile's adaptability is challenging, which may lead to either too much bureaucracy or insufficient control, causing project delays or scope creep.
+            </li>
+
+            <li>
+              <strong>Metrics and Reporting Complications: </strong>
+              Agile and Waterfall use different performance metrics, making it difficult to combine them into a cohesive reporting system. This can obscure project health and hinder decision-making.
+            </li>
+
+            <li>
+              <strong>Resistance to Change and Culture Clash: </strong>
+              Team members may resist adopting hybrid practices, fostering an "us vs. them" mentality between groups accustomed to different methodologies, which can erode collaboration and morale.
+            </li>
+
+            <li>
+              <strong>Tool Overload and Integration Issues: </strong>
+              Supporting both methodologies often requires multiple tools, leading to overload, inefficiencies, and difficulties in maintaining a unified workflow.
+            </li>
+
+            <li>
+              <strong>Communication and Handoff Problems: </strong>
+              Frequent priority changes and transitions between phases demand robust communication; failures here can result in lost information, duplication of effort, or misaligned expectations.
+            </li>
+          </ul>
+          <p>To mitigate these challenges, organizations should invest in training, establish clear guidelines for methodology application, foster open communication, and select integrated tools that support hybrid workflows.</p>
+
+          <h3>Visualizing Hybrid Projects</h3>
+          <p><i>Figure 1: A Gantt chart (waterfall-style schedule) for a construction project, showing phases and dependencies. Hybrid teams might use such Gantt planning during early stages, alongside Agile workflows during execution.</i></p>
+          <p><i>Hybrid projects often use Gantt charts to visualize tasks and timelines. This example chart illustrates how a waterfall plan lays out project phases from start to finish.</i></p>
+
+              <figure class="article-hero">
+                <img src="https://www.projectmanager.com/wp-content/uploads/2022/03/Gantt_Construction_Wide_Zoom-175.jpg" alt="Project Management Board">
+                <p style="font-size: 14px; text-align: center; margin-top: 6px;">
+                  <a href="https://www.projectmanager.com/guides/agile-vs-waterfall-hybrid-projects#:~:text=Gantt%20charts%20are%20essential%20for,whole%20project%20in%20one%20place" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style="text-decoration: none; color: #007bff;">
+                    Image Source
+                  </a>
+              </p>
+              </figure>
+          <h2>Hybrid in Software Development</h2>
+          <h3>Applying Hybrid Models in Software</h3>
+          <p>In the software industry, pure Agile or pure Waterfall often fail to address all needs. For example, a software firm might benefit from Agile for feature development but still require strict documentation for regulatory approval. Hybrid models accommodate this: teams plan major milestones up front (waterfall planning) but build and test features in iterative sprints.</p>
+
+          <ul>
+            <strong>Use Case – Feature Development with Governance:</strong>
+            A software company developing a new enterprise application used a hybrid approach. It kept detailed requirements and design reviews for critical modules (akin to a Waterfall stage-gate), while implementing user-facing features in Scrum sprints. This let the team adapt to feedback on the UI each sprint, yet ensured compliance and integration was tracked. In general, hybrid models are popular in tech when projects are complex or regulated (e.g. finance, healthcare).
+          </ul>
+
+          <h3>Project Frameworks and Tools</h3>
+          <p>Common frameworks for software projects illustrate hybrid thinking. In addition to Scrum and Kanban, teams often use:</p>
+          <ul>
+            <li><strong>Scrumban: </strong>
+              A Scrum/Kanban mix, using sprint cycles and visual Kanban boards. It allows teams to plan in sprints (for predictability) while pulling work in progress (for flexibility).
+            </li>
+
+            <li>
+              <strong>Disciplined Agile (DA): </strong>
+              PMI’s toolkit provides contextual guidance. DA explicitly combines agile, lean, and traditional practices so teams can tailor their process. For example, DA guides teams on when to use agile technical practices versus when formal phase-gates are needed.
+            </li>
+
+            <li>
+              <strong>Scaled Agile Frameworks (SAFe, etc.):</strong>
+              Enterprise-level hybrids add waterfall-like governance. For instance, SAFe uses Agile Release Trains but still plans features at quarterly intervals. Many organizations also apply a waterfall “stage-gate” at the portfolio level to ensure alignment.
+            </li>
+          </ul>
+          <p>Modern tools support these hybrids. For example, Atlassian’s Jira is known for Agile boards, but it can also handle waterfall-like workflows. Teams can run Jira Software for developers (Scrum/Kanban) alongside Jira Work Management for business teams, keeping everything in sync. Tempo (for Jira) notes that “within Jira there are ways of doing waterfall… and you can have fully agile and fully waterfall projects side by side, or mixed, hybrid projects carefully aligned.” Other platforms (like Microsoft Project or Smartsheet) offer both Gantt-chart views and kanban boards. In short, you don’t have to choose: the same toolset can serve both methodologies, meeting diverse team needs.</p>
+
+          <h2>Agile in Manufacturing</h2>
+          <h3>Agile in Manufacturing and Hybrid Product Development</h3>
+          <p>Manufacturing is traditionally Waterfall-heavy (long lead-times, physical constraints), but it is increasingly adopting Agile principles to stay competitive. The term “Agile Manufacturing” describes a production mindset that emphasizes speed, flexibility, and responsiveness. For example, Toyota’s famous Production System shares Lean/Agile values of continuous improvement and quick response to customer demand.</p>
+          <ul>
+            <li>
+              <strong>Use Case – Complex Product Launch</strong>
+              <p>In manufacturing, hybrid approaches shine for intricate products. Consider an industrial equipment maker developing a new line of machines. One manufacturer we’ll call “Company X” used a hybrid process: the core product design and software controls were developed in Agile cycles, incorporating real user feedback; meanwhile, the detailed engineering and assembly plan followed traditional Waterfall gating to ensure manufacturability. This hybrid method let Company X iterate on design quickly while still finalizing components and supply chain arrangements in a planned way. The result was a faster launch without compromising on quality.</p>
+              <p>In practice, manufacturing teams often use stage-gate frameworks with Agile sprints between gates. They might run engineering sprints (e.g. two-week cadences for prototype features) but hold periodic phase reviews with stakeholders. Project managers stress clear governance: one recommendation is “establish clear governance and communication” across agile and non-agile teams, so everyone knows when to switch gears.</p>
+            </li>
+          </ul>
+
+          <h3>Visualizing Agile Workflows</h3>
+          <p><i>Figure 2: A Jira Kanban board example used by an Agile team. Tasks move from “To Do” through “In Progress” to “Done,” enabling visibility and flexibility. In hybrid projects, such boards are often used in tandem with Gantt timelines.</i></p>
+          <p><i>An agile Kanban board (here in Jira) visualizes work in columns. Each card is a task or feature moving through stages. Hybrid project teams often use such boards to track development work iteratively.</i></p>
+            <figure class="article-hero">
+                <img src="https://images.ctfassets.net/xjcz23wx147q/1rtKvEhRtNeLKxWQpu7iny/89e92aef97eac53b5a96978e3b85c7df/Kanban_20swimlanes.png?fm=webp" alt="Project Management Board">
+                <p style="font-size: 14px; text-align: center; margin-top: 6px;">
+                  <a href="https://www.atlassian.com/agile/project-management/scrumban#:~:text=The%20Scrumban%20methodology%20combines%20the,managing%20projects%20of%20any%20size" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style="text-decoration: none; color: #007bff;">
+                    Image Source
+                  </a>
+                </p>
+            </figure>
+          
+          <p>Hybrid benefits are especially valuable when market conditions shift. The manufacturing article notes that “hybrid product development approaches expedite time to market, elevate product quality, enhance flexibility, and reduce costs” – all critical in fast-evolving industries. Indeed, manufacturers now routinely mix agile tools (like Kanban boards, rapid prototyping) with structured engineering plans.</p>
+
+          <h2>Frameworks and Tools for Hybrid Management</h2>
+          <h3>Key Frameworks and Tools</h3>
+          <p>Practically, hybrid project management draws from many known frameworks and tools. Here are some widely used ones:</p>
+          <ul>
+            <li>
+              <strong>Scrumban (Agile+Kanban hybrid):</strong>
+              As discussed, Scrumban merges Scrum’s sprint cadence with Kanban’s visual workflow. It is ideal for teams transitioning from Scrum to Kanban or vice versa.
+            </li>
+
+            <li>
+              <strong>Disciplined Agile (DA): </strong>
+              A PMI-originated hybrid toolkit. DA doesn’t prescribe one method; instead, it provides guidance on combining agile, lean, and traditional practices based on project context. Teams learn “how to effectively combine strategies from Scrum, Kanban… and many other approaches in a tailorable and scalable manner.
+            </li>
+
+            <li>
+              <strong>Stage-Gate with Agile Sprints: </strong>
+              Many companies simply overlay Agile teams onto a Stage-Gate process. For example, after an initial requirement phase (Gate 1), the next phase might be delivered via several Scrum sprints, culminating in Gate 2 for review. This way, high-level milestones remain fixed while the work in between is agile.
+            </li>
+
+            <li>
+              <strong>Scaled Agile Framework (SAFe), LeSS, etc.:</strong>
+              These frameworks integrate Agile at scale but also incorporate portfolio/project planning elements. They often use hybrid language (e.g. “Agile Release Trains” with multi-team sprints plus program increments).
+            </li>
+          </ul>
+          <h3>Popular Tools</h3>
+          <p>Modern PM tools are built for hybridity. Jira (Atlassian) can run both Scrum/Kanban projects and traditional “Classic” projects; you can even sync tasks across boards. Tempo (a Jira app) advises teams: “Jira is agile by design, but purely agile projects are rare. Jira allows teams to continue some waterfall methods while gradually introducing agile practices.” Other tools like Microsoft Project or Sciforma focus on Gantt and resource planning, and vendors like ProjectManager.com or Smartsheet provide both Gantt charts and Kanban boards in one system. The key is choosing technology that supports multiple project views – for example, one dashboard showing both Gantt timelines and an agile backlog.</p>
+          <ul>
+            <li>
+              <b>Bullet Point Summary of Hybrid PM Tools & Features:</b>
+              <ul>
+                <li>Gantt charts for timeline planning (Waterfall).</li>
+                <li>Kanban boards and backlogs for iterative work (Agile).</li>
+                <li>Dashboards that integrate updates so all teams see the latest status.</li>
+                <li>Support for both fixed deadlines and flexible sprints (via combined tools or plugins).</li>
+              </ul>
+            </li>
+          </ul>
+          <p>All these frameworks and tools fit under the broad umbrella of project management frameworks. In practice, teams might mix and match: using Scrum for one team, Kanban for another, and coordinating both under a PMBOK-like governance. The hybrid approach is not one-size-fits-all; it’s about selecting the right framework elements at each stage.</p>
+
+          <h2>Comparing Approaches</h2>
+          <h3>Agile vs Traditional vs Hybrid: A Comparison</h3>
+          <p>The following table summarizes how Agile, Traditional (Waterfall), and Hybrid approaches differ across key dimensions:</p>
+
+          <!--TABLE-->
+
+          <table>
+            <tr>
+                <th>Aspect</th>
+                <th>Agile</th>
+                <th>Waterfall (Traditional)</th>
+                <th>Hybrid</th>
+            </tr>
+            <tr>
+                <td>Approach</td>
+                <td>Iterative, incremental</td>
+                <td>Linear, sequential</td>
+                <td>A blend: stage-wise planning + sprints</td>
+            </tr>
+            <tr>
+                <td>Planning</td>
+                <td>Evolving; requirements reprioritized each sprint</td>
+                <td>Detailed upfront; fixed scope</td>
+                <td>Balanced: initial plan + regular reviews</td>
+            </tr>
+            <tr>
+                <td>Flexibility</td>
+                <td>High – welcomes change</td>
+                <td>Low – changes costly after signoff</td>
+                <td>Moderate – accommodates change in stages</td>
+            </tr>
+            <tr>
+                <td>Delivery</td>
+                <td>Frequent small releases</td>
+                <td>One final delivery</td>
+                <td>Milestone gates with interim releases</td>
+            </tr>
+            <tr>
+                <td>Feedback</td>
+                <td>Continuous (each sprint)</td>
+                <td>End of project or phases</td>
+                <td>Scheduled at milestones and iterations</td>
+            </tr>
+            <tr>
+                <td>Documentation</td>
+                <td>Just-enough (“lightweight”)</td>
+                <td>Heavy (comprehensive)</td>
+                <td>Moderate – focus on what’s needed</td>
+            </tr>
+            <tr>
+                <td>Risk Management</td>
+                <td>Ongoing, with every sprint</td>
+                <td>Upfront (extensive planning)</td>
+                <td>Combined: initial analysis + ongoing mitigation</td>
+            </tr>
+            <tr>
+                <td>Team Structure</td>
+                <td>Cross-functional, self-organizing</td>
+                <td>Specialist roles by phase</td>
+                <td>Hybrid teams (some specialists, some cross-functional)</td>
+            </tr>
+            <tr>
+                <td>Typical Tools</td>
+                <td>Kanban boards, backlogs</td>
+                <td>Gantt charts, spec docs</td>
+                <td>Both (Kanban + Gantt views)</td>
+            </tr>
+            <tr>
+                <td>Common Industries</td>
+                <td>Software, R&amp;D, tech startups</td>
+                <td>Construction, manufacturing, events</td>
+                <td>Complex product development (e.g. aerospace, automotive, med-dev)</td>
+            </tr>
+         </table>
+
+         <p>Each method has its place. Agile favors fast-changing, exploratory work; Waterfall fits well where scope is stable and compliance is strict. Hybrid aims to cover both: for instance, “hybrid product development” is ideal when products are complex and requirements may shift – common in today’s software-driven manufacturing.</p>
+         
+         <h2>Conclusion</h2>
+         <p>In modern product development, especially across software and manufacturing industries, the strict choice of Agile or Waterfall is increasingly giving way to hybrid project management. By combining methodologies, teams can enjoy Agile’s adaptability and Waterfall’s predictability in the same project. This hybrid path has been shown to cut time-to-market, improve quality, and keep costs under control, while still providing the governance that many enterprises require.</p>
+         <p>Whether you call it Scrumban, Disciplined Agile, or simply a tailored process, hybrid project management is becoming the norm in fields from app development to factory assembly. Successful teams focus on clarity: defining which parts of the project follow Agile iterations and which follow formal phases, and ensuring communication and tools support both. With the right mix, organizations can “maximize value” at every stage (to borrow PMI’s language) and stay ahead in a fast-paced market.</p>
+
+        </article>
+
+      </div>
+    </div>
+
+    <aside class="col-lg-4 d-none d-lg-block">
+      <div class="toc-wrap">
+        <div class="toc-card">
+          <h6>On this page</h6>
+          <nav id="toc"></nav>
+        </div>
+      </div>
+    </aside>
+
+      <div class="col-12 d-lg-none mt-3">
+        <div class="toc-card">
+          <h6>On this page</h6>
+          <nav id="toc-mobile"></nav>
+        </div>
+      </div>
+
+
+
+  </main>
+  
+  <!-- Footer placeholder -->
+
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Jaysen Sordum Barikpoa</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <!--<a href=""><i class="bi bi-twitter-x"></i></a>-->
+        <a href="https://web.facebook.com/jaysensordum" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/soo9ice/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/jaysen-sordum-barikpoa/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- Bootstrap and shared scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/articles.js" defer></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/article-1.js"></script>
+</body>
+</html>
